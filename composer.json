@@ -1,0 +1,44 @@
+{
+    "name": "codicastudio/gamp",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/gamp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com",
+            "homepage": "https://codicastudio.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.8",
+        "illuminate/support": "^7.0",
+        "theiconic/php-ga-measurement-protocol": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "codicastudio\\LaravelGAMP\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "codicastudio\\LaravelGAMP\\LaravelGAMPServiceProvider"
+            ],
+            "aliases": {
+                "GAMP": "codicastudio\\LaravelGAMP\\Facades\\GAMP"
+            }
+        }
+    }
+}
