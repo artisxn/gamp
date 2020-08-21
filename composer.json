@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^7.4.8",
+        "php": "^7.4.0",
         "illuminate/support": "^7.0",
         "theiconic/php-ga-measurement-protocol": "^2.0"
     },
